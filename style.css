@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+html* {
+
+	box-sizing: border-box;
+}
+
+
+
+body {
+	font-family: 'Roboto', sans-serif
+    
+}
+img {
+	 max-width: 100%;
+	 margin: 24px auto;
+	 display: block;
+	 box-shadow: 4px 4px 4px #424242; /* horizontal, vertial, blur, cor */
+          
+
+}
+
+#titulo {
+	background-color: #424242;
+	color GhostWhite;
+	padding: 38px 22px;
+	text-shadow: 2px 2px 2px white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 48px;
+	background-image: url("imagem8.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-gap: 16px;
+}
+.cartao {
+	background-color: white;
+	border: 6px solid #ccc;
+	border-radius: 8px;
+	padding: 22px;
+}
+
+.botao {
+	display: inline-block;
+	background-color: #424242;
+	color: #fff;
+	padding: 14px 28px;
+	border-radius: 8px;
+	text-decoration: none;
+
+}
+.botao:hover {
+	background-color: #1E90FF;
+	text-decoration: underline;
+}
+footer {
+	height: 100px;
+	background: #424242;
+	border-radius: 8px;
+	margin-top: 22px;
+	background-image: url("imagem8.jpg");
+	background-position: center;
+	background-size: cover;
+
+}
+
+.filtro{
+	height: 100%;
+	background-color:  rgba(0, 43, 0, 0.5);
+	border-radius: 8px;
+}
+.centro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+small{
+	font-size: 28px;
+	color: #fff;
+}
+
+iframe {
+	display: block;
+	max-width: 100%;
+	margin: 24px auto;
+}
+
+main.container {
+  width: 50vw;
+  margin: auto;
+}
+/* Selecionamos o elemento nav e mudamos seu modo para grid, criando tantas colunas quanto necessárias para todos os items dentro do menu de navegação */
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+/* Selecionamos os anchors dentro da nav para dar as características que desejos aos nosso links */
+nav > a {
+  border-bottom: 4px solid #bbb;
+  color: #424242;
+  font-size: 20px;
+  padding: 20px 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s; /* permite transições mais suaves de estados */
+}
+/* Selecionamos novamente os anchors dentro do nav, mas agora apenas quando o evento de hover acontencer, alterando algumas propriedades do elemento nessa condição */
+nav > a:hover {
+  background-color: #f7ce84;
+  border-bottom: 4px solid orange;
+}
